@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Atkinson+Hyperlegible&family=Chango&family=Cinzel&family=Comfortaa&family=Cormorant&family=DM+Serif+Display:ital@0;1&family=Dancing+Script&family=Josefin+Slab&family=Lato:ital,wght@0,300;0,900;1,300&family=Lobster&family=Londrina+Solid:wght@300&family=Luckiest+Guy&family=Marcellus+SC&family=Montserrat:ital,wght@0,300;0,900;1,200;1,300&family=Nunito+Sans:wght@200;300&family=Open+Sans&family=Playfair+Display&family=Quattrocento+Sans&family=Quattrocento:wght@700&display=swap');
+
+/* color palatte
+yellow: #fca311,
+gray: #e5e5e5
+*/
+
+body{
+    width: 90%;
+    margin: auto;
+}
+
+.masthead{
+    height: 4rem;
+    background-image: url(../img/money.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    font-family: Quattrocento;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.navigation ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    background-color: #fca311;
+}
+
+.navigation ul li a{
+   font-family: Montserrat;
+   font-size: 1rem;
+   font-weight: 900;
+   text-decoration: none;
+   color: white;
+}
+
+.navigation ul li a:hover{
+    background-color: white;
+    color: #fca311;
+}
+
+h2{
+    font-family: Quattrocento bold;
+}
+
+.col-container img, .cards img{
+    width: 80%;
+}
+
+.cards-container, .col-repeat-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+figcaption{
+    font-family: Montserrat;
+    font-size: 1rem;
+}
+
+.col-right p{
+    font-family: Montserrat;
+    font-size: 1rem;
+}
+
+hr{
+    border: 1px solid #fca311;
+}
+
+.social-media ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.social-media ul a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: #fca311;
+}
+
+.footer-copy{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Montserrat;
+    font-size: 0.8rem;
+}
+
+@media only screen and (min-width: 35rem) {
+
+    body{
+        width: 80%;
+        margin: auto;
+    }
+    .col-container img{
+        width: 40%;
+    }
+
+    .col-container img{
+        float: left;
+    }
+
+    .col-repeat-container{
+        display: block;
+    }
+
+    figure{
+        display: block;
+    }
+
+    figure img{
+        margin-right: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .cards img{
+        width: 20rem;
+        height: auto;
+    }
+
+    .cards-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        column-gap: 1rem;
+        row-gap: 1rem;
+    }
+
+    .navigation ul li a{
+        font-size: 1.5rem;
+    }
+
+    figcaption, p{
+        font-size: 1.4rem;
+    }
+
+    footer p{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 80rem) {
+    .cards img{
+        width: 22.2rem;
+        height: auto;
+    }
+
+    .col-container{
+        display: flex;
+        flex-direction: column;
+    }
+}
